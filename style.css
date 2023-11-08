@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/fon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  background-color: rgb(102 105 108 / 80%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.name-sound {
+  overflow: hidden;
+  width: 100%;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.foto {
+  margin: 25px 0;
+}
+.img-with-dound {
+  border-radius: 50%;
+}
+.progress-container {
+  margin-top: 15px;
+  width: 80%;
+  height: 10px;
+  padding: 5px 5px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.progress {
+  /* width: 50%; */
+  height: 6px;
+  background-color: red;
+  border-radius: 5px;
+}
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.hide {
+  display: none;
+}
+.input-file {
+  display: none;
+}
+.add-musik {
+  position: absolute;
+  right: 10px;
+  bottom: 2%;
+}
+.brops {
+  display: flex;
+  gap: 0 20px;
+}
+.brop {
+  width: 15px;
+  height: 20px;
+  background-color: red;
+}
+
+.brop:first-child {
+  height: 100px;
+  transform: rotateX(100deg);
+  animation: top-top 1s infinite;
+}
+.brop:nth-child(2) {
+  height: 90px;
+  transform: rotateX(100deg);
+  animation: top-top 0.8s infinite;
+}
+.brop:nth-child(3) {
+  height: 80px;
+  transform: rotateX(100deg);
+  animation: top-top 0.9s infinite;
+}
+.brop:nth-child(4) {
+  height: 70px;
+  transform: rotateX(100deg);
+  animation: top-top 0.7s infinite;
+}
+.brop:nth-child(5) {
+  height: 100px;
+  transform: rotateX(100deg);
+  animation: top-top 0.8s infinite;
+}
+.brop:nth-child(6) {
+  height: 50px;
+  transform: rotateX(100deg);
+  animation: top-top 0.6s infinite;
+}
+
+@keyframes top-top {
+  0% {
+    transform: rotateX(10deg);
+  }
+  100% {
+    transform: rotateX(100deg);
+  }
+}
+.not-animation {
+  animation: none !important;
+}
+@media (max-width: 520px) {
+  .container {
+    width: 320px;
+  }
+  .name-sound {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .buttons {
+    gap: 0 15px;
+  }
+  .img-start,
+  .img-pause {
+    width: 100px;
+  }
+  .add-musik {
+    bottom: 0;
+    right: 0;
+  }
+}
