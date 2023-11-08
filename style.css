@@ -5,10 +5,10 @@
 }
 
 body {
-  /* background-image: url(images/fon.jpg);
+  background-image: url(images/new-fon.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -45,6 +45,7 @@ body {
 }
 .paragraph-box {
   width: inherit;
+  text-align: center;
 }
 .foto {
   margin: 25px 0;
