@@ -134,7 +134,8 @@ body {
 }
 @media (max-width: 520px) {
   .container {
-    width: 320px;
+    width: 300px;
+    padding: 20px 0;
   }
   .name-sound {
     width: 50%;
@@ -149,6 +150,6 @@ body {
   }
   .add-musik {
     bottom: 0;
-    right: 0;
+    right: 1%;
   }
 }
